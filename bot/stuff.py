@@ -40,13 +40,13 @@ async def start(event):
             [Button.inline("HELP", data="ihelp")],
             [
                 Button.url("SOURCE CODE", url="github.com/1Danish-00/"),
-                Button.url("DEVELOPER @{name}", url="t.me/{developer}"),
+                Button.url(f"DEVELOPER @{name}", url=f"t.me/{developer}"),
             ],
             [
-                Button.url("{name}'s CHANNEL", url="{channel}"),
+                Button.url(f"{name}'s CHANNEL", url=f"{channel}"),
             ],
             [
-                Button.url("{name}'s GROUP", url="{group}"),
+                Button.url(f"{name}'s GROUP", url=f"{group}"),
             ],
         ],
     )
