@@ -13,8 +13,8 @@
 # License can be found in <
 # https://github.com/1Danish-00/CompressorQueue/blob/main/License> .
 
-from .worker import *
 from .config import *
+from .worker import *
 
 
 async def up(event):
