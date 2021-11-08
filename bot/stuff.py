@@ -14,6 +14,7 @@
 # https://github.com/1Danish-00/CompressorQueue/blob/main/License> .
 
 from .worker import *
+from .config import *
 
 
 async def up(event):
@@ -29,7 +30,7 @@ async def up(event):
 
 async def start(event):
     await event.reply(
-        f"Hi `{event.sender.first_name}`\nThis is A CompressorQueue Which Can Encode Videos.\nReduce Size of Videos With Negligible Quality Change\nU can Generate Samples/screenshots too.",
+        f"Hi `{event.sender.first_name}`" + WELCOME,
         buttons=[
             [Button.inline("HELP", data="ihelp")],
             [
