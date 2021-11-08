@@ -37,12 +37,6 @@ async def start(event):
                 Button.url(config.NAME, url="github.com/1Danish-00/"),
                 Button.inline("DEVELOPER", config.DEVELOPER),
             ],
-            [
-                Button.inline("UPDATE CHANNEL", config.CHANNEL),
-            ],
-            [
-                Button.inline("SUPPORT GROUP", config.GROUP),
-            ],
         ],
     )
 
