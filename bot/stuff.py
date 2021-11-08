@@ -13,7 +13,7 @@
 # License can be found in <
 # https://github.com/1Danish-00/CompressorQueue/blob/main/License> .
 
-from .config import CHANNEL, DEVELOPER, GROUP, NAME, WELCOME
+from .config import WELCOME
 from .worker import *
 
 
@@ -34,7 +34,7 @@ async def start(event):
         buttons=[
             [Button.inline("HELP", data="ihelp")],
             [
-                Button.url(config.NAME , url="github.com/1Danish-00/"),
+                Button.url(config.NAME, url="github.com/1Danish-00/"),
                 Button.inline("DEVELOPER", config.DEVELOPER),
             ],
             [
