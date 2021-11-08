@@ -17,7 +17,6 @@ from .config import WELCOME
 from .worker import *
 
 
-
 async def up(event):
     if not event.is_private:
         return
