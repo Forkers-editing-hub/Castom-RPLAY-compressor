@@ -13,13 +13,9 @@
 # License can be found in <
 # https://github.com/1Danish-00/CompressorQueue/blob/main/License> .
 
-from .config import CHANNEL, DEVELOPER, GROUP, NAME, WELCOME
+from .config import WELCOME
 from .worker import *
 
-name = NAME
-channel = CHANNEL
-developer = DEVELOPER
-group = GROUP
 
 
 async def up(event):
