@@ -36,7 +36,7 @@ async def start(event):
             [Button.inline("HELP", data="ihelp")],
             [
                 Button.url(config.NAME, url="github.com/1Danish-00/"),
-                Button.url("DEVELOPER", url=g"t.me/{dev}"),
+                Button.inline("DEVELOPER", url=g"t.me/{dev}"),
             ],
         ],
     )
