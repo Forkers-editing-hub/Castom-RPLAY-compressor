@@ -13,9 +13,12 @@
 # License can be found in <
 # https://github.com/1Danish-00/CompressorQueue/blob/main/License> .
 
-from .config import WELCOME
+from .config import CHANNEL, DEVELOPER, GROUP, NAME, WELCOME
 from .worker import *
 
+name = NAME
+channel = CHANNEL
+bot_token =os.environ.get("BOT_TOKEN")
 
 async def up(event):
     if not event.is_private:
