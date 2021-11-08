@@ -31,7 +31,6 @@ async def up(event):
 async def start(event):
     await event.reply(
         f"Hi `{event.sender.first_name}`\n\n" + WELCOME,
-        dev=config.DEVELOPER,
         buttons=[
             [Button.inline("HELP", data="ihelp")],
             [
