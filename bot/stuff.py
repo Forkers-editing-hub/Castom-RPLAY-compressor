@@ -30,7 +30,7 @@ async def up(event):
 
 async def start(event):
     await event.reply(
-        f"Hi `{event.sender.first_name}`" + WELCOME,
+        f"Hi `{event.sender.first_name}`\n\n" + WELCOME,
         buttons=[
             [Button.inline("HELP", data="ihelp")],
             [
@@ -56,7 +56,7 @@ async def ihelp(event):
 
 async def beck(event):
     await event.edit(
-        f"Hi `{event.sender.first_name}`\nThis is A CompressorQueue Which Can Encode Videos.\nReduce Size of Videos With Negligible Quality Change\nU can Generate Samples/screenshots too.",
+        f"Hi `{event.sender.first_name}`\n\n" + WELCOME,
         buttons=[
             [Button.inline("HELP", data="ihelp")],
             [
