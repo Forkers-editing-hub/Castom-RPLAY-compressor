@@ -13,13 +13,14 @@
 # License can be found in <
 # https://github.com/1Danish-00/CompressorQueue/blob/main/License> .
 
-from .config import WELCOME, NAME, DEVELOPER, CHANNEL, GROUP
+from .config import CHANNEL, DEVELOPER, GROUP, NAME, WELCOME
 from .worker import *
 
 name = NAME
 channel = CHANNEL
 developer = DEVELOPER
 group = GROUP
+
 
 async def up(event):
     if not event.is_private:
@@ -42,12 +43,10 @@ async def start(event):
                 Button.url("DEVELOPER @{name}", url="t.me/{developer}"),
             ],
             [
-                Button.url(
-                    "{name}'s CHANNEL", url="{channel}"),
+                Button.url("{name}'s CHANNEL", url="{channel}"),
             ],
             [
-                Button.url(
-                    "{name}'s GROUP", url="{group}"),
+                Button.url("{name}'s GROUP", url="{group}"),
             ],
         ],
     )
