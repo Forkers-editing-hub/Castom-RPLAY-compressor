@@ -13,12 +13,8 @@
 # License can be found in <
 # https://github.com/1Danish-00/CompressorQueue/blob/main/License> .
 
-from .config import CHANNEL, NAME, WELCOME
+from .config import CHANNEL, DEVELOPER, GROUP, NAME, WELCOME
 from .worker import *
-
-name = NAME
-channel = CHANNEL
-bot_token = os.environ.get("BOT_TOKEN")
 
 
 async def up(event):
@@ -38,14 +34,14 @@ async def start(event):
         buttons=[
             [Button.inline("HELP", data="ihelp")],
             [
-                Button.url("SOURCE CODE", url="github.com/1Danish-00/"),
-                Button.inline("DEVELOPER", data=f"t.me/{developer}"),
+                Button.url(config.NAME , url="github.com/1Danish-00/"),
+                Button.inline("DEVELOPER", config.DEVELOPER),
             ],
             [
-                Button.inline("UPDATE CHANNEL", data=f"{channel}"),
+                Button.inline("UPDATE CHANNEL", config.CHANNEL),
             ],
             [
-                Button.inline("SUPPORT GROUP", data=f"{group}"),
+                Button.inline("SUPPORT GROUP", config.GROUP),
             ],
         ],
     )
