@@ -34,8 +34,8 @@ async def start(event):
         buttons=[
             [Button.inline("HELP", data="ihelp")],
             [
-                Button.url("tihffg", url="github.com/1Danish-00/"),
-                Button.url("DEVELOPER", url=g"t.me/rplaymovie"),
+                Button.url("SOURCE CODE", url="github.com/1Danish-00/"),
+                Button.url("DEVELOPER", url="t.me/danish_00"),
             ],
         ],
     )
