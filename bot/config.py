@@ -21,6 +21,8 @@ try:
     BOT_TOKEN = config("BOT_TOKEN")
     DEV = 1322549723
     OWNER = config("OWNER")
+    BUTTON_NAME = config("BUTTON_NAME")
+    BUTTON_URL = config("BUTTON_URL")
     WELCOME = config("WELCOME_MASSAGE", default="hi")
     FFMPEG = config(
         "FFMPEG",
