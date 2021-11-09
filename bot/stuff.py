@@ -15,7 +15,10 @@
 
 from .config import WELCOME
 from .worker import *
+import os
 
+button_url = os.environ.get("BUTTON_URL")
+button_name = os.environ.get("BUTTON_NAME")
 
 async def up(event):
     if not event.is_private:
@@ -31,11 +34,13 @@ async def up(event):
 async def start(event):
     await event.reply(
         f"Hi `{event.sender.first_name}`\n\n" + WELCOME,
+        name=button_name,
+        url=button_url,
         buttons=[
             [Button.inline("HELP", data="ihelp")],
             [
                 Button.url("SOURCE CODE", url="github.com/1Danish-00/"),
-                Button.url("DEVELOPER", url="t.me/danish_00"),
+                Button.url(f"{name}", url=f"t.me/{url}"),
             ],
         ],
     )
