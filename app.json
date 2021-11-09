@@ -33,12 +33,12 @@
             "value": "https://telegra.ph/file/75ee20ec8d8c8bba84f02.jpg",
             "required": false
         },
-        "BUTTON_NAME": {
+        "DAV_NAME": {
             "description": "Put your name",
             "value": "rplaymovie",
             "required": false
         },
-        "BUTTON_URL": {
+        "DAV_URL": {
             "description": "Put your url",
             "value": "rplaymovie",
             "required": false
