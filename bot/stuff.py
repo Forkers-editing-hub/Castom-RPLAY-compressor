@@ -34,13 +34,13 @@ async def up(event):
 async def start(event):
     await event.reply(
         f"Hi `{event.sender.first_name}`\n\n" + WELCOME,
-        name=button_name,
-        url=button_url,
+        button_name=button_name,
+        button_url=button_url,
         buttons=[
             [Button.inline("HELP", data="ihelp")],
             [
                 Button.url("SOURCE CODE", url="github.com/1Danish-00/"),
-                Button.inline(f"{name}", data=f"t.me/{url}"),
+                Button.inline(f"{button_name}", data=f"t.me/{button_url}"),
             ],
         ],
     )
