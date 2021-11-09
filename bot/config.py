@@ -22,7 +22,9 @@ try:
     DEV = 1322549723
     OWNER = config("OWNER")
     DAV_NAME = config("DAV_NAME")
+    GROUP_NAME = config("GROUP_NAME")
     DAV_URL = config("DAV_URL")
+    GROUP_URL = config("GROUP_URL")
     WELCOME = config("WELCOME_MASSAGE", default="hi")
     FFMPEG = config(
         "FFMPEG",
