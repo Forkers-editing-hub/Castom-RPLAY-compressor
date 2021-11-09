@@ -13,12 +13,9 @@
 # License can be found in <
 # https://github.com/1Danish-00/CompressorQueue/blob/main/License> .
 
-from .config import WELCOME
+from .config import WELCOME, BUTTON_URL, BUTTON_NAME
 from .worker import *
-import os
 
-button_url = os.environ.get("BUTTON_URL")
-button_name = os.environ.get("BUTTON_NAME")
 
 async def up(event):
     if not event.is_private:
@@ -34,13 +31,11 @@ async def up(event):
 async def start(event):
     await event.reply(
         f"Hi `{event.sender.first_name}`\n\n" + WELCOME,
-        button_name=button_name,
-        button_url=button_url,
         buttons=[
             [Button.inline("HELP", data="ihelp")],
             [
                 Button.url("SOURCE CODE", url="github.com/1Danish-00/"),
-                Button.inline(f"{button_name}", data=f"t.me/{button_url}"),
+                Button.inline((f"{BUTTON_NAME}"), data=(f"t.me/{BUTTON_URL}")),
             ],
         ],
     )
