@@ -13,7 +13,7 @@
 # License can be found in <
 # https://github.com/1Danish-00/CompressorQueue/blob/main/License> .
 
-from .config import WELCOME, BUTTON_URL, BUTTON_NAME
+from .config import WELCOME, DAV_URL, DAV_NAME
 from .worker import *
 
 
@@ -35,7 +35,7 @@ async def start(event):
             [Button.inline("HELP", data="ihelp")],
             [
                 Button.url("SOURCE CODE", url="github.com/1Danish-00/"),
-                Button.url((f"{BUTTON_NAME}"), url=(f"t.me/{BUTTON_URL}")),
+                Button.url((f"{DAV_NAME}"), url=(f"t.me/{DAV_URL}")),
             ],
         ],
     )
