@@ -40,7 +40,7 @@ async def start(event):
             [Button.inline("HELP", data="ihelp")],
             [
                 Button.url("SOURCE CODE", url="github.com/1Danish-00/"),
-                Button.url(f"{name}", url=f"t.me/{url}"),
+                Button.inline(f"{name}", data=f"t.me/{url}"),
             ],
         ],
     )
