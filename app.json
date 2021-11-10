@@ -42,16 +42,6 @@
             "description": "Put your url",
             "value": "rplaymovie",
             "required": false
-        },
-        "GROUP_NAME": {
-            "description": "Put your name",
-            "value": "rplaymovie",
-            "required": false
-        },
-        "GROUP_URL": {
-            "description": "Put your url",
-            "value": "rplaymovie",
-            "required": false
         }
     },
   "addons": [
