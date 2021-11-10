@@ -37,9 +37,6 @@ async def start(event):
                 Button.url("SOURCE CODE", url="github.com/1Danish-00/"),
                 Button.url((f"{DAV_NAME}"), url=(f"t.me/{DAV_URL}")),
             ],
-            [
-                Button.url((f"{GROUP_NAME}"), url=(f"t.me/{GROUP_URL}")),
-            ],
         ],
     )
 
